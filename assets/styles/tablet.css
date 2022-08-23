@@ -1,0 +1,37 @@
+:root {
+  /* Responsive Desing */
+  --porcentage-tablet: 0.5608;
+}
+
+/* Header Section */
+
+.header {
+  margin: calc(1.8rem * var(--porcentage-tablet)) auto calc(6.4rem * var(--porcentage-tablet));
+  max-width: calc(70rem * var(--porcentage-tablet));
+  height: calc(15rem * var(--porcentage-tablet));
+  padding: calc(2rem * var(--porcentage-tablet)) calc(2rem * var(--porcentage-tablet)) 0 0;
+  padding-bottom: calc(2rem * var(--porcentage-tablet));
+  padding-left: calc(3.4rem * var(--porcentage-tablet));
+  border-radius: calc(2rem * var(--porcentage-tablet));
+}
+
+.header__title img {
+  width: calc(162px * var(--porcentage-tablet));
+  height: calc(99px * var(--porcentage-tablet));
+}
+
+.header__score {
+  width: calc(15rem * var(--porcentage-tablet));
+  height: calc(11.4rem * var(--porcentage-tablet));
+  border-radius: calc(1rem * var(--porcentage-tablet));
+  padding: calc(2rem * var(--porcentage-tablet)) 0;
+}
+
+.header__score p {
+  font-size: calc(1.5rem * var(--porcentage-tablet));
+  letter-spacing: calc(0.3rem * var(--porcentage-tablet));
+}
+
+.header__score h1 {
+  font-size: calc(7rem * var(--porcentage-tablet));
+}

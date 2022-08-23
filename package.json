@@ -1,0 +1,31 @@
+{
+  "name": "rock-paper-scissors-master",
+  "version": "1.0.0",
+  "description": "Rock, Paper, Scissors game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "stylelint-check": "stylelint-config-prettier-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cdrn19/rock-paper-scissors.git"
+  },
+  "keywords": [
+    "HTML5",
+    "CSS3",
+    "JAVASCRIPT"
+  ],
+  "author": "Carlos Revetti (https://cdrn19.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cdrn19/rock-paper-scissors/issues"
+  },
+  "homepage": "https://github.com/Cdrn19/rock-paper-scissors#readme",
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "prettier": "^2.7.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-prettier": "^2.0.0"
+  }
+}

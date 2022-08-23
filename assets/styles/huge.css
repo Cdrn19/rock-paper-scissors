@@ -1,0 +1,30 @@
+/* Header Section */
+
+.header {
+  margin: 1.8rem auto 6.4rem;
+  max-width: 70rem;
+  height: 15rem;
+  padding: 2rem 2rem 2rem 3.4rem;
+  border-radius: 2rem;
+}
+
+.header__title img {
+  width: 162px;
+  height: 99px;
+}
+
+.header__score {
+  width: 15rem;
+  height: 11.4rem;
+  border-radius: 1rem;
+  padding: 2rem 0;
+}
+
+.header__score p {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.header__score h1 {
+  font-size: 7rem;
+}
