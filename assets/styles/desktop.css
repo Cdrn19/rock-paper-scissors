@@ -35,3 +35,40 @@
 .header__score h1 {
   font-size: calc(7rem * var(--porcentage-desktop));
 }
+
+/* Main Section */
+
+.main {
+  display: grid;
+  justify-content: center;
+}
+
+.main__button {
+  width: calc(19.7rem * var(--porcentage-desktop));
+  height: calc(19.7rem * var(--porcentage-desktop));
+  border-radius: 50%;
+  border: solid 1px black;
+  background: hsl(230deg 89% 62%);
+}
+
+.main__button figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: calc(-2.2rem * var(--porcentage-desktop));
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #e9e9e9;
+  box-shadow: inset 0 calc(0.9rem * var(--porcentage-desktop)) rgb(0 0 0 / 20%);
+  border: solid calc(2.2rem * var(--porcentage-desktop)) hsl(230deg 89% 65%);
+}
+
+.main__button figure:active {
+  box-shadow: inset 0 calc(1.5rem * var(--porcentage-desktop)) rgb(0 0 0 / 20%);
+}
+
+.main__button figure img {
+  width: calc(6.9rem * var(--porcentage-desktop));
+  height: calc(7.9rem * var(--porcentage-desktop));
+}
