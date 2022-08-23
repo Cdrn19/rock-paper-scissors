@@ -82,7 +82,6 @@ body {
   height: calc(19.7rem * var(--porcentage-mobile));
   border-radius: 50%;
   border: solid 1px black;
-  background: hsl(230deg 89% 62%);
 }
 
 .main__button figure {
@@ -95,14 +94,70 @@ body {
   border-radius: 50%;
   background-color: #e9e9e9;
   box-shadow: inset 0 calc(0.9rem * var(--porcentage-mobile)) rgb(0 0 0 / 20%);
+}
+
+.main__button:nth-child(1) {
+  background: hsl(230deg 89% 62%);
+}
+
+.main__button:nth-child(2) {
+  background: hsl(39deg 89% 49%);
+}
+
+.main__button:nth-child(3) {
+  background: hsl(349deg 71% 52%);
+}
+
+.main__button:nth-child(1) figure {
   border: solid calc(2.2rem * var(--porcentage-mobile)) hsl(230deg 89% 65%);
 }
 
-.main__button figure:active {
+.main__button:nth-child(2) figure {
+  border: solid calc(2.2rem * var(--porcentage-mobile)) hsl(40deg 84% 53%);
+}
+
+.main__button:nth-child(3) figure {
+  border: solid calc(2.2rem * var(--porcentage-mobile)) hsl(349deg 70% 63%);
+}
+
+.main__button:nth-child(1) figure:active {
   box-shadow: inset 0 calc(1.5rem * var(--porcentage-mobile)) rgb(0 0 0 / 20%);
 }
 
-.main__button figure img {
+.main__button:nth-child(2) figure:active {
+  box-shadow: inset 0 calc(1.5rem * var(--porcentage-mobile)) rgb(0 0 0 / 20%);
+}
+
+.main__button:nth-child(3) figure:active {
+  box-shadow: inset 0 calc(1.5rem * var(--porcentage-mobile)) rgb(0 0 0 / 20%);
+}
+
+.main__button:nth-child(1) figure img {
   width: calc(6.9rem * var(--porcentage-mobile));
   height: calc(7.9rem * var(--porcentage-mobile));
+}
+
+.main__button:nth-child(2) figure img {
+  width: calc(7.1rem * var(--porcentage-mobile));
+  height: calc(7.8rem * var(--porcentage-mobile));
+}
+
+.main__button:nth-child(3) figure img {
+  width: calc(6.8rem * var(--porcentage-mobile));
+  height: calc(6.8rem * var(--porcentage-mobile));
+}
+
+.main__button:nth-child(1) figure:active img {
+  width: calc(6.3rem * var(--porcentage-mobile));
+  height: calc(7.3rem * var(--porcentage-mobile));
+}
+
+.main__button:nth-child(2) figure:active img {
+  width: calc(6.5rem * var(--porcentage-mobile));
+  height: calc(7.2rem * var(--porcentage-mobile));
+}
+
+.main__button:nth-child(3) figure:active img {
+  width: calc(6.2rem * var(--porcentage-mobile));
+  height: calc(6.2rem * var(--porcentage-mobile));
 }
