@@ -171,3 +171,22 @@ body {
   width: calc(6.2rem * var(--porcentage-mobile));
   height: calc(6.2rem * var(--porcentage-mobile));
 }
+
+/* Footer Section */
+
+.footer {
+  position: fixed;
+  bottom: 3.2rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.footer__button {
+  border: 0.2rem solid hsl(217deg 16% 45%);
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.3rem;
+  padding: 1rem 3.7rem 0.8rem;
+  background-color: transparent;
+  color: white;
+}

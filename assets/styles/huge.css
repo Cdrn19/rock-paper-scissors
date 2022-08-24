@@ -107,3 +107,13 @@
   width: 6.2rem;
   height: 6.2rem;
 }
+
+/* Footer Section */
+
+.footer {
+  position: unset;
+  bottom: unset;
+  left: unset;
+  transform: unset;
+  text-align: end;
+}

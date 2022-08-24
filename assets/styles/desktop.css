@@ -114,3 +114,13 @@
   width: calc(6.2rem * var(--porcentage-desktop));
   height: calc(6.2rem * var(--porcentage-desktop));
 }
+
+/* Footer Section */
+
+.footer {
+  position: unset;
+  bottom: unset;
+  left: unset;
+  transform: unset;
+  text-align: end;
+}
