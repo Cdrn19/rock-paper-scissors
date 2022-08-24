@@ -75,6 +75,12 @@ body {
 .main {
   display: grid;
   justify-content: center;
+  margin-top: calc(2rem * var(--porcentage-mobile));
+  background-image: url("./../images/bg-triangle.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: calc(313px * var(--porcentage-mobile));
 }
 
 .main__button {
@@ -102,10 +108,14 @@ body {
 
 .main__button:nth-child(2) {
   background: hsl(39deg 89% 49%);
+  margin-left: calc(8rem * var(--porcentage-mobile));
 }
 
 .main__button:nth-child(3) {
   background: hsl(349deg 71% 52%);
+  justify-self: center;
+  grid-column: 1 / 3;
+  margin-top: calc((6.92rem - 1.6rem) * var(--porcentage-mobile));
 }
 
 .main__button:nth-child(1) figure {
