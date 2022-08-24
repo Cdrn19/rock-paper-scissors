@@ -125,6 +125,65 @@
   text-align: end;
 }
 
+/* Selection section */
+
+.selection__player h2,
+.selection__house h2 {
+  font-size: calc(2rem * var(--porcentage-desktop));
+  letter-spacing: calc(0.3rem * var(--porcentage-desktop));
+  margin-bottom: calc(5.5rem * var(--porcentage-desktop));
+}
+
+.selection__wait {
+  margin: calc(2.2rem * 1.4822 * var(--porcentage-desktop)) calc(2.2rem * 1.4822 * var(--porcentage-desktop));
+  margin-bottom: calc(4.4rem * 1.4822 * var(--porcentage-desktop));
+  width: calc(17.5rem * 1.4822 * var(--porcentage-desktop));
+  height: calc(17.5rem * 1.4822 * var(--porcentage-desktop));
+}
+
+.selection__wait h2 {
+  margin-left: calc(4rem * var(--porcentage-desktop));
+}
+
+.selection__button {
+  margin: calc(2.2rem * 1.4822 * var(--porcentage-desktop));
+  width: calc(19.7rem * 1.4822 * var(--porcentage-desktop));
+  height: calc(19.7rem * 1.4822 * var(--porcentage-desktop));
+  border: solid calc(0.1rem * 1.4822 * var(--porcentage-desktop)) black;
+}
+
+.selection__button--figure {
+  margin-top: calc(-2.2rem * 1.4822 * var(--porcentage-desktop));
+  box-shadow: inset 0 calc(0.9rem * 1.4822 * var(--porcentage-desktop)) rgb(0 0 0 / 20%);
+}
+
+.selection__button--figure.paper {
+  border: solid calc(2.2rem * 1.4822 * var(--porcentage-desktop)) hsl(230deg 89% 65%);
+}
+
+.selection__button--figure.paper img {
+  width: calc(6.9rem * 1.4822 * var(--porcentage-desktop));
+  height: calc(7.9rem * 1.4822 * var(--porcentage-desktop));
+}
+
+.selection__button--figure.scissors {
+  border: solid calc(2.2rem * 1.4822 * var(--porcentage-desktop)) hsl(40deg 84% 53%);
+}
+
+.selection__button--figure.scissors img {
+  width: calc(7.1rem * 1.4822 * var(--porcentage-desktop));
+  height: calc(7.8rem * 1.4822 * var(--porcentage-desktop));
+}
+
+.selection__button--figure.rock {
+  border: solid calc(2.2rem * 1.4822 * var(--porcentage-desktop)) hsl(349deg 70% 63%);
+}
+
+.selection__button--figure.rock img {
+  width: calc(6.8rem * 1.4822 * var(--porcentage-desktop));
+  height: calc(6.8rem * 1.4822 * var(--porcentage-desktop));
+}
+
 /* Modal section */
 
 .rules-modal__container {

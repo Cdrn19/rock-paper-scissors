@@ -192,6 +192,121 @@ body {
   color: white;
 }
 
+/* Selection section  */
+
+.selection__container {
+  display: none;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.selection__player,
+.selection__house {
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.selection__player h2,
+.selection__house h2 {
+  font-size: calc(2rem * var(--porcentage-mobile));
+  letter-spacing: calc(0.3rem * var(--porcentage-mobile));
+  margin: 2.8rem 0;
+}
+
+.selection__wait {
+  background-color: hsl(237deg 49% 15%);
+  width: calc(17.5rem * var(--porcentage-mobile));
+  height: calc(17.5rem * var(--porcentage-mobile));
+  border-radius: 50%;
+  margin-bottom: calc(2.2rem * var(--porcentage-mobile));
+  margin-left: calc(4rem * var(--porcentage-mobile));
+  border: none;
+}
+
+.selection__wait h2 {
+  margin-left: calc(4rem * var(--porcentage-mobile));
+}
+
+.selection__button {
+  width: calc(19.7rem * var(--porcentage-mobile));
+  height: calc(19.7rem * var(--porcentage-mobile));
+  border-radius: 50%;
+  border: solid calc(0.1rem * var(--porcentage-mobile)) black;
+}
+
+.selection__player h2 {
+  margin-right: calc(4rem * var(--porcentage-mobile));
+}
+
+.selection__house h2 {
+  margin-left: calc(4rem * var(--porcentage-mobile));
+}
+
+.selection__house .selection__button {
+  margin-left: calc(4rem * var(--porcentage-mobile));
+}
+
+.selection__player .selection__button {
+  margin-right: calc(4rem * var(--porcentage-mobile));
+}
+
+.selection__button--figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: calc(-2.2rem * var(--porcentage-mobile));
+  border-radius: 50%;
+  background-color: #e9e9e9;
+  box-shadow: inset 0 calc(0.9rem * var(--porcentage-mobile)) rgb(0 0 0 / 20%);
+}
+
+.selection__button.paper {
+  background: hsl(230deg 89% 62%);
+}
+
+.selection__button--figure.paper {
+  border: solid calc(2.2rem * var(--porcentage-mobile)) hsl(230deg 89% 65%);
+}
+
+.selection__button--figure.paper img {
+  width: calc(6.9rem * var(--porcentage-mobile));
+  height: calc(7.9rem * var(--porcentage-mobile));
+}
+
+.selection__button.scissors {
+  background: hsl(39deg 89% 49%);
+}
+
+.selection__button--figure.scissors {
+  border: solid calc(2.2rem * var(--porcentage-mobile)) hsl(40deg 84% 53%);
+}
+
+.selection__button--figure.scissors img {
+  width: calc(7.1rem * var(--porcentage-mobile));
+  height: calc(7.8rem * var(--porcentage-mobile));
+}
+
+.selection__button.rock {
+  background: hsl(349deg 71% 52%);
+}
+
+.selection__button--figure.rock {
+  border: solid calc(2.2rem * var(--porcentage-mobile)) hsl(349deg 70% 63%);
+}
+
+.selection__button.rock img {
+  width: calc(7.1rem * var(--porcentage-mobile));
+  height: calc(7.8rem * var(--porcentage-mobile));
+}
+
+.selection__button--figure.rock img {
+  width: calc(6.8rem * var(--porcentage-mobile));
+  height: calc(6.8rem * var(--porcentage-mobile));
+}
+
 /* Modal section */
 
 .rules-modal__container {

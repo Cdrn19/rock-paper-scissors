@@ -114,3 +114,73 @@
   width: calc(6.2rem * var(--porcentage-tablet));
   height: calc(6.2rem * var(--porcentage-tablet));
 }
+
+/* Selection section */
+
+.selection__container {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.selection__player,
+.selection__house {
+  flex-direction: column;
+}
+
+.selection__player h2,
+.selection__house h2 {
+  font-size: calc(2rem * var(--porcentage-tablet));
+  letter-spacing: calc(0.3rem * var(--porcentage-tablet));
+  margin: calc(5.5rem * var(--porcentage-tablet)) 0 calc(5.5rem * var(--porcentage-tablet)) 0;
+}
+
+.selection__wait {
+  margin: calc(2.2rem * 1.4822 * var(--porcentage-tablet)) calc(2.2rem * 1.4822 * var(--porcentage-tablet));
+  margin-bottom: calc(4.4rem *  var(--porcentage-tablet));
+  width: calc(17.5rem * 1.4822 * var(--porcentage-tablet));
+  height: calc(17.5rem * 1.4822 * var(--porcentage-tablet));
+}
+
+.selection__wait h2 {
+  margin-left: 0;
+}
+
+.selection__button {
+  margin: calc(2.2rem * 1.4822 * var(--porcentage-tablet));
+  width: calc(19.7rem * 1.4822 * var(--porcentage-tablet));
+  height: calc(19.7rem * 1.4822 * var(--porcentage-tablet));
+  border: solid calc(0.1rem * 1.4822 * var(--porcentage-tablet)) black;
+}
+
+.selection__button--figure {
+  margin-top: calc(-2.2rem * 1.4822 * var(--porcentage-tablet));
+  box-shadow: inset 0 calc(0.9rem * 1.4822 * var(--porcentage-tablet)) rgb(0 0 0 / 20%);
+}
+
+.selection__button--figure.paper {
+  border: solid calc(2.2rem * 1.4822 * var(--porcentage-tablet)) hsl(230deg 89% 65%);
+}
+
+.selection__button--figure.paper img {
+  width: calc(6.9rem * 1.4822 * var(--porcentage-tablet));
+  height: calc(7.9rem * 1.4822 * var(--porcentage-tablet));
+}
+
+.selection__button--figure.scissors {
+  border: solid calc(2.2rem * 1.4822 * var(--porcentage-tablet)) hsl(40deg 84% 53%);
+}
+
+.selection__button--figure.scissors img {
+  width: calc(7.1rem * 1.4822 * var(--porcentage-tablet));
+  height: calc(7.8rem * 1.4822 * var(--porcentage-tablet));
+}
+
+.selection__button--figure.rock {
+  border: solid calc(2.2rem * 1.4822 * var(--porcentage-tablet)) hsl(349deg 70% 63%);
+}
+
+.selection__button--figure.rock img {
+  width: calc(6.8rem * 1.4822 * var(--porcentage-tablet));
+  height: calc(6.8rem * 1.4822 * var(--porcentage-tablet));
+}
