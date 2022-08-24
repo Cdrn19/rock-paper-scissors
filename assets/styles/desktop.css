@@ -127,6 +127,11 @@
 
 /* Modal section */
 
+.rules-modal__container {
+  min-height: 70.4rem;
+  background-color: #0000004d;
+}
+
 .rules-modal__content {
   border-radius: 1rem;
   width: 40.1rem;

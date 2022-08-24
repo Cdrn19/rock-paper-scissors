@@ -120,18 +120,6 @@
 
 /* Modal section */
 
-.rules-modal__content {
-  border-radius: 1rem;
-  width: 40.1rem;
-  height: 41.5rem;
-  padding: 3.2rem 3.8rem;
-}
-
-.rules-modal__content button {
-  right: 3.2rem;
-  top: 3.8rem;
-}
-
-.rules-modal__content figure img {
-  margin: 4rem auto 0;
+.rules-modal__container {
+  min-height: 78.7rem;
 }
