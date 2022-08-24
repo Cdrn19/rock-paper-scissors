@@ -190,3 +190,43 @@ body {
   background-color: transparent;
   color: white;
 }
+
+/* Modal section */
+
+.rules-modal__container {
+  width: 100%;
+  height: 100%;
+  display: none;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.rules-modal__content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
+.rules-modal__content h1 {
+  text-align: center;
+  font-size: 2.9rem;
+  color: hsl(229deg 47% 23%);
+  margin: 10rem 0;
+}
+
+.rules-modal__content button {
+  all: unset;
+  position: absolute;
+  bottom: 6.4rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.rules-modal__body figure img {
+  display: block;
+  margin: 0 auto 10rem;
+}
