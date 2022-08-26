@@ -1,15 +1,20 @@
 /* Modal input */ 
+
 const rulesModal = document.getElementById("rules-modal");
 const openBtn = document.getElementById("openBtn");
 const closeBtn = document.getElementById("closeBtn"); 
+
 /* Play Game input */
+
 const score = document.getElementById("score");
 const main = document.getElementById("main"); 
 const mainButton = document.getElementsByClassName("main__button"); 
 const playAgainBtn = document.getElementById("playAgainBtn");
 const selection = document.getElementById("selection");
 const selectionResult = document.querySelector(".selection__result");
+
 /* Modal */ 
+
 openBtn.addEventListener("click", () => {
     rulesModal.style.display = "grid";  
 }); 
@@ -17,17 +22,20 @@ openBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     rulesModal.style.display = "none";
 });
-/* playGame */
+
+/* Play Game */
+
+import { playGame } from "./playGame.js";
+
+score.innerText = 0;
 
 for( let i = 0  ; i < mainButton.length ; ++i ) {
     mainButton[i].addEventListener("click",() => {
-        let select = (mainButton[i].value);
         main.style.display = "none";    
         selection.style.display = "flex";
         selectionResult.style.display = "none"; 
-        selectionResult.style.opacity = "0"; 
-        selectionOptionRender(select, "player","YOU PICKED"); 
-        addPointRender("YOU WIN")
+        selectionResult.style.opacity = "0";  
+        playGame(mainButton[i].value);
     });
 }
 
@@ -36,7 +44,9 @@ playAgainBtn.addEventListener("click", () => {
     selection.style.display = "none";
 });
 
-function selectionOptionRender(selectionPlayer, player,who){
+/* Rendering */
+
+export function selectionOptionRender(selectionPlayer, player,who){
     document.querySelector(".selection__house").innerHTML = 
     `<h2>THE HOUSE PICKED</h2>
     <button class="selection__wait">
@@ -48,10 +58,20 @@ function selectionOptionRender(selectionPlayer, player,who){
             <img src="./assets/images/icon-${selectionPlayer}.svg" alt="${selectionPlayer}-icon">
         </figure>
     </button>`;
-}; 
+}
 
-function addPointRender(result){
-        selectionResult.style.display = "block";
+let point = 0; 
+
+export function addPointRender(result){
+
+    if (result == "YOU WIN"){
+        point += 1;
+    } else if ( result == "YOU LOSE") {
+        point -= 1;
+    } 
+
+    score.innerText = point;
+    selectionResult.style.display = "block";
     document.getElementById("outputResult").innerText = result;  
     setTimeout(()=>{
         selectionResult.style.opacity = "1"; 
