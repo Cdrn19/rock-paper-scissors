@@ -27,15 +27,13 @@ closeBtn.addEventListener("click", () => {
 
 import { playGame } from "./playGame.js";
 
-score.innerText = 0;
-
 for( let i = 0  ; i < mainButton.length ; ++i ) {
     mainButton[i].addEventListener("click",() => {
         main.style.display = "none";    
         selection.style.display = "flex";
         selectionResult.style.display = "none"; 
         selectionResult.style.opacity = "0";  
-        playGame(mainButton[i].value);
+        playGame();
     });
 }
 
@@ -60,20 +58,25 @@ export function selectionOptionRender(selectionPlayer, player,who){
     </button>`;
 }
 
-let point = 0; 
-
-export function addPointRender(result){
-
+export async function addPointRender(result){
+    let point = 0;
+    
     if (result == "YOU WIN"){
         point += 1;
     } else if ( result == "YOU LOSE") {
         point -= 1;
-    } 
+    }
 
+    
     score.innerText = point;
-    selectionResult.style.display = "block";
-    document.getElementById("outputResult").innerText = result;  
+
     setTimeout(()=>{
-        selectionResult.style.opacity = "1"; 
+        selectionResult.style.display = "block";
+        document.getElementById("outputResult").innerText = result;  
     },1000); 
+
+    setTimeout(()=>{
+        selectionResult.style.display = "block";
+        selectionResult.style.opacity = "1"; 
+    },2000); 
 }

@@ -6,10 +6,27 @@ import selectWinner from    "./rulesGame.js";
 /* Play Game */
 
 export async function playGame(){ 
-    let playerOne = hostPlayer(), playerTwo = botPlayer();
+    let playerOne, playerTwo; 
 
-    selectionOptionRender(playerOne, "player","YOU PICKED"); 
-    selectionOptionRender(playerTwo, "house", "THE HOUSE PICKED");
-    addPointRender(selectWinner(playerOne, playerTwo));  
-     
+    await hostPlayer()
+        .then(function(value){
+            selectionOptionRender(value, "player","YOU PICKED");
+            playerOne = value; 
+        })
+        .catch(console.error); 
+
+    await botPlayer()
+        .then(function(value){
+            if (typeof value == "string")
+            selectionOptionRender(value, "house", "THE HOUSE PICKED");
+            playerTwo = value; 
+        })
+        .catch(console.error); 
+        
+    await selectWinner(playerOne, playerTwo)
+        .then(function(value){
+            addPointRender(value);  
+        })
+        .catch(console.error);
+      
 }
