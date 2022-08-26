@@ -224,7 +224,7 @@ body {
   width: calc(17.5rem * var(--porcentage-mobile));
   height: calc(17.5rem * var(--porcentage-mobile));
   border-radius: 50%;
-  margin: calc(1.1rem * var(--porcentage-mobile)) 0;
+  margin: calc(1.1rem * var(--porcentage-mobile)) calc(2.2rem * var(--porcentage-mobile));
   margin-left: calc(4rem * var(--porcentage-mobile));
   border: none;
 }
