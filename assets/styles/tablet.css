@@ -136,21 +136,37 @@
 }
 
 .selection__wait {
-  margin: calc(2.2rem * 1.4822 * var(--porcentage-tablet)) calc(2.2rem * 1.4822 * var(--porcentage-tablet));
-  margin-bottom: calc(4.4rem *  var(--porcentage-tablet));
-  width: calc(17.5rem * 1.4822 * var(--porcentage-tablet));
-  height: calc(17.5rem * 1.4822 * var(--porcentage-tablet));
+  width: calc(25.9385rem * var(--porcentage-tablet));
+  height: calc(25.9385rem * var(--porcentage-tablet));
+  margin: calc(3.2608rem * var(--porcentage-tablet)) calc(1.6304rem * var(--porcentage-tablet));
 }
 
 .selection__wait h2 {
   margin-left: 0;
 }
 
+.selection__result {
+  position: unset;
+  margin: 0;
+}
+
+.selection__result button {
+  margin: 0 calc(3.2rem * var(--porcentage-tablet));
+}
+
 .selection__button {
-  margin: calc(2.2rem * 1.4822 * var(--porcentage-tablet));
+  margin-top: calc(2.2rem * 1.4822 * var(--porcentage-tablet));
   width: calc(19.7rem * 1.4822 * var(--porcentage-tablet));
   height: calc(19.7rem * 1.4822 * var(--porcentage-tablet));
   border: solid calc(0.1rem * 1.4822 * var(--porcentage-tablet)) black;
+}
+
+.selection__player .selection__button {
+  margin-right: 0;
+}
+
+.selection__house .selection__button {
+  margin-left: 0;
 }
 
 .selection__button--figure {

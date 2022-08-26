@@ -27,6 +27,7 @@ for( let i = 0  ; i < mainButton.length ; ++i ) {
         selectionResult.style.display = "none"; 
         selectionResult.style.opacity = "0"; 
         selectionOptionRender(select, "player","YOU PICKED"); 
+        addPointRender("YOU WIN")
     });
 }
 
@@ -47,4 +48,12 @@ function selectionOptionRender(selectionPlayer, player,who){
             <img src="./assets/images/icon-${selectionPlayer}.svg" alt="${selectionPlayer}-icon">
         </figure>
     </button>`;
+}; 
+
+function addPointRender(result){
+        selectionResult.style.display = "block";
+    document.getElementById("outputResult").innerText = result;  
+    setTimeout(()=>{
+        selectionResult.style.opacity = "1"; 
+    },1000); 
 }

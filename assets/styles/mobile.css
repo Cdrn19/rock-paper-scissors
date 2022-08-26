@@ -201,8 +201,13 @@ body {
 }
 
 .selection__player,
+.selection__result,
 .selection__house {
   text-align: center;
+}
+
+.selection__player,
+.selection__house {
   display: flex;
   flex-direction: column-reverse;
 }
@@ -219,13 +224,39 @@ body {
   width: calc(17.5rem * var(--porcentage-mobile));
   height: calc(17.5rem * var(--porcentage-mobile));
   border-radius: 50%;
-  margin-bottom: calc(2.2rem * var(--porcentage-mobile));
+  margin: calc(1.1rem * var(--porcentage-mobile)) 0;
   margin-left: calc(4rem * var(--porcentage-mobile));
   border: none;
 }
 
 .selection__wait h2 {
   margin-left: calc(4rem * var(--porcentage-mobile));
+}
+
+.selection__result {
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  margin-top: 21.3rem;
+}
+
+.selection__result h1 {
+  margin-bottom: 1.6rem;
+  font-size: 5.5rem;
+}
+
+.selection__result button {
+  margin: 0 calc(3.2rem * var(--porcentage-mobile));
+  padding: 1.5rem 5.5rem 1.4rem;
+  font-size: 1.5rem;
+  color: hsl(229deg 25% 31%);
+  letter-spacing: 0.2rem;
+  border-radius: 0.8rem;
+  border-style: none;
+}
+
+.selection__result button:hover {
+  color: #c1445c;
 }
 
 .selection__button {

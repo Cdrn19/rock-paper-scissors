@@ -128,10 +128,30 @@
 }
 
 .selection__wait {
-  margin: calc(2.2rem * 1.4822) calc(2.2rem * 1.4822);
-  margin-bottom: calc(4.4rem * 1.4822);
   width: calc(17.5rem * 1.4822);
   height: calc(17.5rem * 1.4822);
+  margin: calc(4.3rem * 1.4822);
+}
+
+.selection__result button {
+  margin: 0 3.2rem;
+}
+
+.selection__button {
+  margin-top: calc(2.2rem * 1.4822 * 1);
+  width: calc(19.7rem * 1.4822 * 1);
+  height: calc(19.7rem * 1.4822 * 1);
+  border: solid calc(0.1rem * 1.4822 * 1) black;
+}
+
+.selection__player .selection__button,
+.selection__house .selection__button {
+  margin: calc(3.2rem * 1.4822);
+}
+
+.selection__button--figure {
+  margin-top: calc(-2.2rem * 1.4822);
+  box-shadow: inset 0 calc(0.9rem * 1.4822) rgb(0 0 0 / 20%);
 }
 
 .selection__button--figure.paper {

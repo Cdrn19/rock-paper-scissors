@@ -135,21 +135,24 @@
 }
 
 .selection__wait {
-  margin: calc(2.2rem * 1.4822 * var(--porcentage-desktop)) calc(2.2rem * 1.4822 * var(--porcentage-desktop));
-  margin-bottom: calc(4.4rem * 1.4822 * var(--porcentage-desktop));
-  width: calc(17.5rem * 1.4822 * var(--porcentage-desktop));
-  height: calc(17.5rem * 1.4822 * var(--porcentage-desktop));
+  width: calc(25.9385rem * var(--porcentage-desktop));
+  height: calc(25.9385rem * var(--porcentage-desktop));
+  margin: calc(4.8332rem * var(--porcentage-desktop));
 }
 
-.selection__wait h2 {
-  margin-left: calc(4rem * var(--porcentage-desktop));
+.selection__result button {
+  margin: 0 calc(3.2rem * 1.4822 * var(--porcentage-desktop));
 }
 
 .selection__button {
-  margin: calc(2.2rem * 1.4822 * var(--porcentage-desktop));
   width: calc(19.7rem * 1.4822 * var(--porcentage-desktop));
   height: calc(19.7rem * 1.4822 * var(--porcentage-desktop));
   border: solid calc(0.1rem * 1.4822 * var(--porcentage-desktop)) black;
+}
+
+.selection__player .selection__button,
+.selection__house .selection__button {
+  margin: calc(3.2rem * var(--porcentage-desktop));
 }
 
 .selection__button--figure {
