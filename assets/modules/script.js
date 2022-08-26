@@ -23,6 +23,39 @@ closeBtn.addEventListener("click", () => {
     rulesModal.style.display = "none";
 });
 
+/* LocalStorage */
+
+localStorageRender();
+
+function localStorageRender(){
+
+    const point = localStorage.getItem("point");
+
+    if( isNaN(point) || point == undefined ){
+        localStorage.setItem("point", 0);
+        score.innerText = localStorage.getItem("point"); 
+    } else {
+        score.innerText = localStorage.getItem("point"); 
+    }
+
+}
+
+function localStorageUpdate(point){
+    let localData = []; 
+  
+    localData.push(point);
+    localData.push(parseFloat(localStorage.getItem("point"))); 
+    
+    const initialValue = 0; 
+    let updatePoint = localData.reduce((previusValue, currentValue) => 
+        previusValue + currentValue, initialValue
+    );
+
+    localStorage.setItem("point", updatePoint);
+    score.innerText = updatePoint;
+
+}
+
 /* Play Game */
 
 import { playGame } from "./playGame.js";
@@ -58,7 +91,7 @@ export function selectionOptionRender(selectionPlayer, player,who){
     </button>`;
 }
 
-export async function addPointRender(result){
+export function addPointRender(result){
     let point = 0;
     
     if (result == "YOU WIN"){
@@ -67,16 +100,15 @@ export async function addPointRender(result){
         point -= 1;
     }
 
-    
-    score.innerText = point;
+    localStorageUpdate(point);
 
     setTimeout(()=>{
         selectionResult.style.display = "block";
         document.getElementById("outputResult").innerText = result;  
-    },1000); 
+    },800); 
 
     setTimeout(()=>{
         selectionResult.style.display = "block";
         selectionResult.style.opacity = "1"; 
-    },2000); 
+    },1000); 
 }
