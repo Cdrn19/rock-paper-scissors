@@ -88,9 +88,9 @@ export function selectionOptionRender(selectionPlayer, player,who){
     document.querySelector(`.selection__${player}`).innerHTML = 
     `<h2>${who}</h2>
     <button class="selection__button ${selectionPlayer}">
-        <figure class="selection__button--figure ${selectionPlayer}">
+        <div class="selection__button--figure ${selectionPlayer}">
             <img src="./assets/images/icon-${selectionPlayer}.svg" alt="${selectionPlayer}-icon">
-        </figure>
+        </div>
     </button>`;
 }
 
@@ -118,17 +118,20 @@ export function addPointRender(result){
 
 export function selectionWinnerRender(result){
     let player; 
-
-    if (result == "YOU WIN"){
-        player = "player";
-    } else if (result == "YOU LOSE"){
-        player = "house";
-    }
     
-    setTimeout(()=>{
-        for(let i = 0 ; i < 3 ; ++i){
-            document.querySelector(`.selection__${player} .selection__button`).innerHTML += 
-            `<div class="${"selection__pulse pulse"+[i]}"></div>`;
+    if(result !== "YOU DRAW") {
+
+        if (result == "YOU WIN"){
+            player = "player";
+        } else if (result == "YOU LOSE"){
+            player = "house";
         }
-    }, 1000);
+        
+        setTimeout(()=>{
+            for(let i = 0 ; i < 3 ; ++i){
+                document.querySelector(`.selection__${player} .selection__button`).innerHTML += 
+                `<div class="${"selection__pulse pulse"+[i]}"></div>`;
+            }
+        }, 1000);
+    }
 }

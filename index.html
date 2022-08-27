@@ -21,24 +21,24 @@
         </figure>
         <div class="header__score">
             <p class="header__score--title">SCORE</p>
-            <h1 type="number" min="1" max="2" class="header__score--counter" id="score"></h1>
+            <h1 class="header__score--counter" id="score"></h1>
         </div>
     </header> 
     <main class="main" id="main">
-        <button class="main__button" id="main__button" value="paper">
-            <figure class="main__figure">
+        <button class="main__button" value="paper">
+            <div class="main__figure">
                 <img src="./assets/images/icon-paper.svg" alt="paper-icon">
-            </figure>
+            </div>
         </button>
-        <button class="main__button" id="main__button" value="scissors">
-            <figure class="main__figure">
+        <button class="main__button" value="scissors">
+            <div class="main__figure">
                 <img src="./assets/images/icon-scissors.svg" alt="scissor-icon">
-            </figure>
+            </div>
         </button>
-        <button class="main__button" id="main__button" value="rock">
-            <figure class="main__figure">
+        <button class="main__button" value="rock">
+            <div class="main__figure">
                 <img src="./assets/images/icon-rock.svg" alt="rock-icon">
-            </figure>
+            </div>
         </button>
     </main> 
     <div class="selection__container" id="selection">
@@ -56,14 +56,12 @@
         </section>
     </div> 
     <footer class="footer">
-        <button class="footer__button" id="openBtn">
-            <p>RULES</p>
-        </button>
+        <button class="footer__button" id="openBtn">RULES</button>
     </footer>
     <div class="rules-modal__container" id="rules-modal" style="display: none;">
         <div class="rules-modal__content">
             <h1>RULES</h1>
-            <button type="Close" id="closeBtn">
+            <button id="closeBtn">
                 <img src="./assets/images/icon-close.svg" alt="close-icon">
             </button>
             <div class="rules-modal__body">

@@ -61,56 +61,56 @@
   margin-top: calc((6.92rem - 1.6rem) * var(--porcentage-tablet));
 }
 
-.main__button:nth-child(1) figure {
+.main__button:nth-child(1) div {
   border: solid calc(2.2rem * var(--porcentage-tablet)) hsl(230deg 89% 65%);
 }
 
-.main__button:nth-child(2) figure {
+.main__button:nth-child(2) div {
   border: solid calc(2.2rem * var(--porcentage-tablet)) hsl(40deg 84% 53%);
 }
 
-.main__button:nth-child(3) figure {
+.main__button:nth-child(3) div {
   border: solid calc(2.2rem * var(--porcentage-tablet)) hsl(349deg 70% 63%);
 }
 
-.main__button:nth-child(1) figure:active {
+.main__button:nth-child(1) div:active {
   box-shadow: inset 0 calc(1.5rem * var(--porcentage-tablet)) rgb(0 0 0 / 20%);
 }
 
-.main__button:nth-child(2) figure:active {
+.main__button:nth-child(2) div:active {
   box-shadow: inset 0 calc(1.5rem * var(--porcentage-tablet)) rgb(0 0 0 / 20%);
 }
 
-.main__button:nth-child(3) figure:active {
+.main__button:nth-child(3) div:active {
   box-shadow: inset 0 calc(1.5rem * var(--porcentage-tablet)) rgb(0 0 0 / 20%);
 }
 
-.main__button:nth-child(1) figure img {
+.main__button:nth-child(1) div img {
   width: calc(6.9rem * var(--porcentage-tablet));
   height: calc(7.9rem * var(--porcentage-tablet));
 }
 
-.main__button:nth-child(2) figure img {
+.main__button:nth-child(2) div img {
   width: calc(7.1rem * var(--porcentage-tablet));
   height: calc(7.8rem * var(--porcentage-tablet));
 }
 
-.main__button:nth-child(3) figure img {
+.main__button:nth-child(3) div img {
   width: calc(6.8rem * var(--porcentage-tablet));
   height: calc(6.8rem * var(--porcentage-tablet));
 }
 
-.main__button:nth-child(1) figure:active img {
+.main__button:nth-child(1) div:active img {
   width: calc(6.3rem * var(--porcentage-tablet));
   height: calc(7.3rem * var(--porcentage-tablet));
 }
 
-.main__button:nth-child(2) figure:active img {
+.main__button:nth-child(2) div:active img {
   width: calc(6.5rem * var(--porcentage-tablet));
   height: calc(7.2rem * var(--porcentage-tablet));
 }
 
-.main__button:nth-child(3) figure:active img {
+.main__button:nth-child(3) div:active img {
   width: calc(6.2rem * var(--porcentage-tablet));
   height: calc(6.2rem * var(--porcentage-tablet));
 }
