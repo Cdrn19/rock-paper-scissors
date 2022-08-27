@@ -78,10 +78,13 @@ playAgainBtn.addEventListener("click", () => {
 /* Rendering */
 
 export function selectionOptionRender(selectionPlayer, player,who){
+
+
     document.querySelector(".selection__house").innerHTML = 
     `<h2>THE HOUSE PICKED</h2>
     <button class="selection__wait">
     </button>`;
+
     document.querySelector(`.selection__${player}`).innerHTML = 
     `<h2>${who}</h2>
     <button class="selection__button ${selectionPlayer}">
@@ -111,4 +114,21 @@ export function addPointRender(result){
         selectionResult.style.display = "block";
         selectionResult.style.opacity = "1"; 
     },1000); 
+}
+
+export function selectionWinnerRender(result){
+    let player; 
+
+    if (result == "YOU WIN"){
+        player = "player";
+    } else if (result == "YOU LOSE"){
+        player = "house";
+    }
+    
+    setTimeout(()=>{
+        for(let i = 0 ; i < 3 ; ++i){
+            document.querySelector(`.selection__${player} .selection__button`).innerHTML += 
+            `<div class="${"selection__pulse pulse"+[i]}"></div>`;
+        }
+    }, 1000);
 }

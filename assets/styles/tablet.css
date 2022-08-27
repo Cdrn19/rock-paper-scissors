@@ -161,6 +161,24 @@
   border: solid calc(0.1rem * 1.4822 * var(--porcentage-tablet)) black;
 }
 
+.pulse0 {
+  width: calc(24.625rem * 1.4822 * var(--porcentage-tablet));
+  height: calc(24.625rem * 1.4822 * var(--porcentage-tablet));
+  z-index: -1;
+}
+
+.pulse1 {
+  width: calc(30.7812rem * 1.4822 * var(--porcentage-tablet));
+  height: calc(30.7812rem * 1.4822 * var(--porcentage-tablet));
+  z-index: -2;
+}
+
+.pulse2 {
+  width: calc(38.4765rem * 1.4822 * var(--porcentage-tablet));
+  height: calc(38.4765rem  * 1.4822 * var(--porcentage-tablet));
+  z-index: -3;
+}
+
 .selection__player .selection__button {
   margin-right: 0;
 }

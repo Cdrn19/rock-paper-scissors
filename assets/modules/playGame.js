@@ -1,6 +1,6 @@
 import hostPlayer  from "./hostPlayer.js"; 
 import botPlayer from "./botPlayer.js"; 
-import { addPointRender, selectionOptionRender } from "./script.js";
+import { addPointRender, selectionOptionRender, selectionWinnerRender } from "./script.js";
 import selectWinner from    "./rulesGame.js";
 
 /* Play Game */
@@ -25,7 +25,8 @@ export async function playGame(){
         
     await selectWinner(playerOne, playerTwo)
         .then(function(value){
-            addPointRender(value);  
+            addPointRender(value);
+            selectionWinnerRender(value);  
         })
         .catch(console.error);
       
